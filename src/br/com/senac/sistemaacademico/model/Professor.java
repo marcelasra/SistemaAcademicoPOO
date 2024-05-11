@@ -5,6 +5,24 @@ public class Professor extends Pessoa {
     int matriculaProfessor;
     String dataAdmissao;
     double salarioHorista;
+    
+    public Professor(){
+        
+        super();
+        
+    }
+    
+    public Professor (String nome, String rg, String cpf, int matriculaProfessor,
+            String dataAdmissao, double salarioHorista){
+        
+        this.nome = nome;
+        this.rg = rg;
+        this.cpf = cpf;
+        this.matriculaProfessor = matriculaProfessor;
+        this.dataAdmissao = dataAdmissao;
+        this.salarioHorista = salarioHorista;
+        
+    }
 
     public String retornaDadosProfessor() {
         String dados;
