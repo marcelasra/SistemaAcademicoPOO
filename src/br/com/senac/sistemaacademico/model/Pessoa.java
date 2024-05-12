@@ -1,15 +1,37 @@
 package br.com.senac.sistemaacademico.model;
 
 public class Pessoa {
-    String nome, cpf, rg;
-    
-    public String retornaDados(){
-        String dados = "";
+    private String nome;
+    private String rg;
+    private String cpf;
 
-        dados += "Nome: " + nome + "\n"; 
-        dados += "RG: " + rg + "\n";
-        dados += "CPF: " + cpf + "\n";
-        
-        return dados; 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getRg() {
+        return rg;
+    }
+
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String retornaDados() {
+        return "Nome: " + getNome() + "\n" +
+               "RG: " + getRg() + "\n" +
+               "CPF: " + getCpf() + "\n";
     }
 }
